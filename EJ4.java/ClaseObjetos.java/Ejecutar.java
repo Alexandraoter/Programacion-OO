@@ -11,5 +11,10 @@ public class Ejecutar {
         Computador objComputador2 = new Computador("Lenovo", "Gris", "LBV258", 1258822, 15.0);
 
         System.out.println(objComputador1.toString());
+        System.out.println(objComputador2.toString());
+
+        objComputador1.reubicar("INGENIERIA");
+        objComputador2.asignar("David");
+
     }
 }

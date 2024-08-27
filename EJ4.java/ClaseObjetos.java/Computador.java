@@ -27,11 +27,11 @@ public class Computador {
     }
 
     public void reubicar(String oficina){
-        System.out.println("El computador de marca: " + marca +  "se reubicó en la oficina: " + oficina);
+        System.out.println("El computador de marca: " + marca +  " se reubicó en la oficina: " + oficina);
     }
 
     public void asignar(String trabajador){
-        System.out.println("El comutador con serie: " + serie + "Fue asignado a: " + trabajador);
+        System.out.println("El computador con serie: " + serie + " Fue asignado a: " + trabajador);
     }
 
     public String toString(){
