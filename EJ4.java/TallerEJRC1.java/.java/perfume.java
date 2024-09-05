@@ -28,7 +28,7 @@ public class perfume {
         if (cantidad <= precio){
             precio = nuevoPrecio;
         }else{
-            System.out.println(" Se ha actualizado el precio de " + nombre + "ahora es: " + nuevoPrecio + ".");
+            System.out.println(" Se ha actualizado el precio de " + nombre + " ahora es: " + nuevoPrecio + ".");
         }
     }
 }
