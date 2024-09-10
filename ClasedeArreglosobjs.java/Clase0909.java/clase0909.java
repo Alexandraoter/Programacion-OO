@@ -22,7 +22,7 @@ public class clase0909 {
 
         //Arreglo de objetos
 
-        Producto objP1 = new Producto(1, "Pizza", 1900.0);
+        Producto objP1 = new Producto(1, "Pizza", 19900.0);
         Producto objP2 = new Producto(2, "Perro caliente", 15000.0);
         Producto objP3 = new Producto(3, "Hamburguesa", 25000.0);
         //EL METODO TOsTRING PERMITE COLOCAR EL OBJ EN UN SYSTEM OUT PRINT Y EL PERMITE MOSTRARLO SINO LO TARERIAMOS 
@@ -54,9 +54,12 @@ public class clase0909 {
         for(int i = 0; i < p.length; i ++){
             //porque solo neceito los precios
             precioTotal += p[i].getPrecio();
+            // %d xq es de digito y %s xq es de cadena %10.2f en este caso (10.2)porque es un float
+            // el \t es para organizar bien 
+        System.out.printf("%d\t %s\t %10.2f \t \n" , p[i].getId(), p[i].getNombre(), p[i].getPrecio());
         }
 
-        System.out.println("La factura esta por: " + precioTotal);
+        System.out.println("Total: " + precioTotal);
 
 
 
