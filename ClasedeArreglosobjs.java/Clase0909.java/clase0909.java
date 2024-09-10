@@ -20,6 +20,13 @@ public class clase0909 {
             System.out.println("b["+ i + "] = " + b[i]);
         }
 
+        //Arreglo de objetos
+
+
+
+
+
+        
 
     }
 }
