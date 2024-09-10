@@ -63,7 +63,7 @@ public class clase0909 {
         System.out.println("Total: " + precioTotal);
 
 
-
+        //a los ejercicios que se hicieron se inplementaran arreglos o arraylist
 
     }
 }
