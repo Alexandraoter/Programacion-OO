@@ -39,6 +39,24 @@ public class clase0909 {
         System.out.println(objP1);
 
 
+        //SE CREA EL arreglo de objetos(producto)
+        //se puede acceder a todA LA INFO QUE HAYA EN LA CLASE
+        Producto[] p = new Producto[3];
+        //se guardan los objetos creados en el arreglo de tipo producto
+        p[0]= objP1;
+        p[1]= objP2;
+        p[2]= objP3;
+
+        //CALCULAR  el precio total de todos los productos que estan dentro 
+        //del arreglo con un for
+
+        double precioTotal = 0.0;
+        for(int i = 0; i < p.length; i ++){
+            //porque solo neceito los precios
+            precioTotal += p[i].getPrecio();
+        }
+
+        System.out.println("La factura esta por: " + precioTotal);
 
 
 
