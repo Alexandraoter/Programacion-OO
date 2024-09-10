@@ -56,6 +56,7 @@ public class clase0909 {
             precioTotal += p[i].getPrecio();
             // %d xq es de digito y %s xq es de cadena %10.2f en este caso (10.2)porque es un float
             // el \t es para organizar bien 
+            //el \n es para salto de linea 
         System.out.printf("%d\t %s\t %10.2f \t \n" , p[i].getId(), p[i].getNombre(), p[i].getPrecio());
         }
 
