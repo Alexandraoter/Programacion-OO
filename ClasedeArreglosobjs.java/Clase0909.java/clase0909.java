@@ -22,11 +22,26 @@ public class clase0909 {
 
         //Arreglo de objetos
 
+        Producto objP1 = new Producto(1, "Pizza", 1900.0);
+        Producto objP2 = new Producto(2, "Perro caliente", 15000.0);
+        Producto objP3 = new Producto(3, "Hamburguesa", 25000.0);
+        //EL METODO TOsTRING PERMITE COLOCAR EL OBJ EN UN SYSTEM OUT PRINT Y EL PERMITE MOSTRARLO SINO LO TARERIAMOS 
+        //CON EL METODO GET
+
+        //mostramos todo el objeto
+        System.out.println(objP1);
+        //trae solo lo que pedi
+        System.out.println(objP1.getNombre());
+        //set permite modificar
+        objP1.setNombre("Pizza mediana");
+        //muestra el nobre que cambie
+        System.out.println(objP1.getNombre());
+        System.out.println(objP1);
 
 
 
 
-        
+
 
     }
 }
