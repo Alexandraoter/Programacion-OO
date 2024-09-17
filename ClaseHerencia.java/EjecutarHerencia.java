@@ -18,7 +18,17 @@ public class EjecutarHerencia {
     System.out.println(objP1.mostrarInfo());
     System.out.println(objP4.mostrarInfo());
 
+    //Creación de un arreglo de persona (objetos)
+    Persona[] p = new Persona[4];
+    p[0]= objP1;
+    p[1]= objP2;
+    p[2]= objP3;
+    p[3]= objP4;
 
+    for( int i = 0; i < p.length; i++){
+        // se pone p[i] porwue el i es como si fueran el 1, 1, 2 , 3
+        System.out.println(p[i].calcularEdad(ANIO_ACTUAL) + " - " + p[i].mostrarInfo());
+    }
 
 
     }
