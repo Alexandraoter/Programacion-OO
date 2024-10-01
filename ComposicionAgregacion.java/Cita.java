@@ -1,41 +1,34 @@
-import java.sql.Date;
+import java.time.LocalDateTime;
+
 public class Cita {
     
-        private Date fecha; 
-        private String especialista;
+    private LocalDateTime fecha;
+    private String especialista;
 
+    public Cita(LocalDateTime fecha, String especialista){
+        this.fecha = fecha;
+        this.especialista = especialista;
+    }
 
-        public Cita(Date fecha, String especialista) {
-            this.fecha = fecha;
-            this.especialista = especialista;
-        }
+    public LocalDateTime getFecha(){
+        return fecha;
+    }
 
+    public void setFecha(LocalDateTime fecha){
+        this.fecha = fecha;
+    }
+    
+    public String getEspecialista(){
+        return especialista;
+    }
 
-        public Date getFecha() {
-            return fecha;
-        }
+    public void setEspecialista(String especialista){
+        this.especialista = especialista;
+    }
 
+    public String toString(){
+        return "Cita[ Fecha: "+ fecha + " Especialista: " + especialista + " ]";
+    }
 
-        public void setFecha(Date fecha) {
-            this.fecha = fecha;
-        }
-
-
-        public String getEspecialista() {
-            return especialista;
-        }
-
-
-        public void setEspecialista(String especialista) {
-            this.especialista = especialista;
-        }
-
-
-        @Override
-        public String toString() {
-            return "Cita [ fecha: " + fecha + ", Especialista: " + especialista + " ]";
-        }
-
-        
     
 }
