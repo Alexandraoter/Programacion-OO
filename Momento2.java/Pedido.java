@@ -82,7 +82,7 @@ public class Pedido extends Cliente{
     }
 
     public void mostrarDetalles() {
-        System.out.println("Muy rico");
+        System.out.println("Excelente estado");
         for (DetallePedido detalle : detalles) {
             detalle.mostrarInformacion();
         }
