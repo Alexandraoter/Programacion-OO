@@ -1,23 +1,15 @@
 import java.util.ArrayList;
+import java.util.List;
 
-
-public class Pedido extends Cliente{
+public class Pedido {
     private int numeroPedido;
     private Cliente cliente;
-    
-    private ArrayList<DetallePedido> detalles; // Lista de detalles de los productos del pedido
+    private List<DetallePedido> detalles = new ArrayList<>();
 
-    // Constructor
-    
-    public Pedido(int id, String nombre, String apellido, String direccion, String telefono, String email,
-            int numeroPedido, Cliente cliente, ArrayList<DetallePedido> detalles) {
-        super(id, nombre, apellido, direccion);
+    public Pedido(int numeroPedido, Cliente cliente) {
         this.numeroPedido = numeroPedido;
         this.cliente = cliente;
-        this.detalles = detalles;
     }
-
-    
 
     
 
@@ -27,13 +19,9 @@ public class Pedido extends Cliente{
 
 
 
-
-
     public void setNumeroPedido(int numeroPedido) {
         this.numeroPedido = numeroPedido;
     }
-
-
 
 
 
@@ -43,49 +31,44 @@ public class Pedido extends Cliente{
 
 
 
-
-
     public void setCliente(Cliente cliente) {
         this.cliente = cliente;
     }
 
 
 
-
-    public ArrayList<DetallePedido> getDetalles() {
+    public List<DetallePedido> getDetalles() {
         return detalles;
     }
 
 
 
-
-
-    public void setDetalles(ArrayList<DetallePedido> detalles) {
+    public void setDetalles(List<DetallePedido> detalles) {
         this.detalles = detalles;
     }
 
+    
 
 
-
-
-    // Métodos adicionales
     public void agregarDetalle(DetallePedido detalle) {
-        detalles.add(detalle);
+        List<DetallePedido> copiaDetalles = new ArrayList<>(detalles);
+        copiaDetalles.add(detalle);
+        this.detalles = copiaDetalles;
     }
+
+    public void mostrarDetalles() {
+        System.out.println("Las frutas estan en perfecto estado");
+        for (DetallePedido detalle : detalles) {
+        detalle.mostrarInformacion();
+    }       
+}
 
     public double calcularTotal() {
         double total = 0;
         for (DetallePedido detalle : detalles) {
             total += detalle.getSubtotal();
-        }
-        return total;
     }
+            return total;
+}
 
-    public void mostrarDetalles() {
-        System.out.println("Excelente estado");
-        for (DetallePedido detalle : detalles) {
-            detalle.mostrarInformacion();
-        }
-        System.out.println("Total del pedido: $" + calcularTotal());
-    }
 }

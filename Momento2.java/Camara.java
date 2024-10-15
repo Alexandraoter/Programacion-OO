@@ -45,9 +45,4 @@ public class Camara {
         this.megapixeles = megapixeles;
     }
 
-
-
-    public void tomarFoto() {
-        System.out.println("¡Clic! Foto tomada.");
-    }
 }
