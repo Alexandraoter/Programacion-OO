@@ -1,14 +1,10 @@
-
-
-public class Foto extends Producto {
+public class Foto {
     private int resolución;
     private String formato;
 
     // Constructor
     
-    public Foto(int numero, String nombre, String descripcion, double precio, int cantidad, int resolución,
-            String formato) {
-        super(numero, nombre, descripcion, precio, cantidad);
+    public Foto(int numero, String nombre, String descripcion, double precio, int cantidad, int resolución,String formato) {
         this.resolución = resolución;
         this.formato = formato;
         

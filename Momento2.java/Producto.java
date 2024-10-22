@@ -87,12 +87,12 @@ public class Producto {
     }
 
     // Método estático para crear un ArrayList de productos
-    public static ArrayList<Producto> crearListaProductos() {
+    /*public static ArrayList<Producto> crearListaProductos() {
         ArrayList<Producto> productos = new ArrayList<>();
         // Agregar productos a la lista
-        productos.add(new Producto(1, "Pera", "Fruta verde y pequeña", 1500, 190));
+        productos.add(new Producto(1, "", "Fruta verde y pequeña", 1500, 190));
         productos.add(new Producto(2, "piña", "Fruta amarilla", 4500, 280));
         
         return productos;
-    }
+    }/ */
 }

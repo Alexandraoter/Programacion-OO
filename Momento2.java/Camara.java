@@ -1,12 +1,12 @@
-public class Camara {
+public class Camara extends Producto{
     private String marca;
     private String modelo;
-    private int megapixeles;
 
-    public Camara(String marca, String modelo, int megapixeles) {
+    public Camara(int codigo, String nombre, String descripcion, double precio, int cantidad, String marca, String modelo) {
+        super(codigo,nombre, descripcion, precio, cantidad);
         this.marca = marca;
         this.modelo = modelo;
-        this.megapixeles = megapixeles;
+
     }
 
     
@@ -33,16 +33,9 @@ public class Camara {
         this.modelo = modelo;
     }
 
-
-
-    public int getMegapixeles() {
-        return megapixeles;
-    }
-
-
-
-    public void setMegapixeles(int megapixeles) {
-        this.megapixeles = megapixeles;
+    public void mostrarDetallesCamara() {
+        System.out.println("Marca: " + marca);
+        System.out.println("Modelo: " + modelo);
     }
 
 }
