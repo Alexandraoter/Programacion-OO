@@ -5,8 +5,8 @@ public class JuegoLucha {
 
     // Constructor para inicializar los personajes
     public JuegoLucha(String nombre1, String nombre2) {
-        this.jugador1 = new Lulito(nombre1);
-        this.jugador2 = new Lulo(nombre2);
+        this.jugador1 = new Lulo(nombre1);
+        this.jugador2 = new Lulito(nombre2);
     }
 
     // Metodo para iniciar la pelea
