@@ -1,3 +1,4 @@
+
 public class Operario extends Carga {
     private int horas;
     private double tarifaHora;
